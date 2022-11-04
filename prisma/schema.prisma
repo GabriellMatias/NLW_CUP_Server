@@ -42,11 +42,12 @@ model User {
   id        String   @id @default(cuid())
   name      String
   email     String   @unique
+  googleId  String?  @unique
   avatarUrl String?
   createdAt DateTime @default(now())
 
   participatingAt Participants[]
-  ownPools         Pool[]
+  ownPools        Pool[]
 }
 
 // salva precos em banco de dados como se fosse porcentage
@@ -72,4 +73,6 @@ model Guess {
 
   participant Participants @relation(fields: [participantsId], references: [id])
   game        Game         @relation(fields: [gameId], references: [id])
+
+  @@unique([participantsId, gameId])
 }
