@@ -1,6 +1,6 @@
 
 <h1 align="center"> 
-  <img width="150px" src="https://user-images.githubusercontent.com/80908772/200185223-b95c26ce-6b27-40b0-ace8-2ffc11d51d7c.png"/>
+  <img src="https://github.com/GabriellMatias/NLW_CUP_MobileApplication/assets/80908772/1861a3bd-e001-4774-ae2b-2a30fa205bce"/>
 </h1>
 <br/>
 
